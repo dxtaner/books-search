@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
 
-function App() {
+import React from "react";
+import BookSearch from "./components/BookSearch";
+import "./App.css";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="app-container">
+      <h1>Book Search App</h1>
+      <BookSearch />
+
+      {/* Footer */}
+      <footer className="app-footer">
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Developed by{" "}
+          <a
+            href="https://github.com/dxtaner"
+            target="_blank"
+            rel="noopener noreferrer">
+            dxtaner
+          </a>{" "}
+          | LinkedIn:{" "}
+          <a
+            href="https://www.linkedin.com/in/tanerozer16/"
+            target="_blank"
+            rel="noopener noreferrer">
+            tanerozer16
+          </a>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </footer>
     </div>
   );
-}
+};
 
 export default App;
