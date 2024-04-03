@@ -1,0 +1,58 @@
+/* src/components/BookDetailModal.css */
+
+.book-detail-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+}
+
+.book-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.book-info {
+    max-width: 60%;
+}
+
+.book-info p {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.book-info strong {
+    font-weight: bold;
+    color: #555;
+}
+
+.book-info a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.book-info a:hover {
+    text-decoration: underline;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.button-container>button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #ae525b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-container>button:hover {
+    background-color: #c82333;
+}
